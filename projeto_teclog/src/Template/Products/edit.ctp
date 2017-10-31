@@ -24,8 +24,9 @@
         <legend><?= __('Edit Product') ?></legend>
         <?php
             echo $this->Form->control('descricao');
-            echo $this->Form->control('quantidade_atual');
+            $quantidade = $product->quantidade_atual;
         ?>
+        <input type="number" name="quantidade_atual" value="<?= $quantidade ?>" requerid disabled id="quantidade-atual">
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>

@@ -18,8 +18,8 @@
         <legend><?= __('Add Product') ?></legend>
         <?php
             echo $this->Form->control('descricao');
-            echo $this->Form->control('quantidade_atual');
         ?>
+        <input type="number" name="quantidade_atual" value=0 required id="quantidade-atual">
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
