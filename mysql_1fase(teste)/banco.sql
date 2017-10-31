@@ -1,7 +1,7 @@
 
 
 create table users(
-	id int unsined auto_increment,
+	id int unsigned auto_increment,
 	nome varchar(45) not null,
 	funcao varchar(45) not null,
 	cpf varchar(11) unique not null,
