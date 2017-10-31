@@ -1,3 +1,4 @@
+
 create table users(
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	nome VARCHAR(45) NOT NULL,
@@ -19,5 +20,7 @@ create table produtos(
 	preco_por_caixa FLOAT(5) NOT NULL,
 	demanda_mensal FLOAT(5) NOT NULL,
 	produto_user_cad INT,
+	rua VARCHAR(1) NOT NULL,
+	posicao INT NOT NULL,
 	CONSTRAINT produto_user_fk FOREIGN KEY (produto_user_cad) REFERENCES users(id)
 );
